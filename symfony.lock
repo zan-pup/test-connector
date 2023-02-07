@@ -1,4 +1,32 @@
 {
+    "jane-php/json-schema": {
+        "version": "7.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "7.0",
+            "ref": "96f544c796adaf3dae9ec9dfd7f035bc8243e28c"
+        },
+        "files": [
+            "bin/jane-json-schema-generate",
+            "config/jane/json_schema.php",
+            "config/packages/jane.yaml"
+        ]
+    },
+    "jane-php/open-api-common": {
+        "version": "7.4",
+        "recipe": {
+            "repo": "github.com/symfony/recipes-contrib",
+            "branch": "main",
+            "version": "7.0",
+            "ref": "9443fa0142137a4a09eb7fd5caffc0710e0d7595"
+        },
+        "files": [
+            "bin/jane-open-api-generate",
+            "config/jane/open_api.php",
+            "config/packages/jane.yaml"
+        ]
+    },
     "symfony/console": {
         "version": "6.2",
         "recipe": {
@@ -53,6 +81,18 @@
         "files": [
             "config/packages/routing.yaml",
             "config/routes.yaml"
+        ]
+    },
+    "symfony/validator": {
+        "version": "6.2",
+        "recipe": {
+            "repo": "github.com/symfony/recipes",
+            "branch": "main",
+            "version": "5.3",
+            "ref": "c32cfd98f714894c4f128bb99aa2530c1227603c"
+        },
+        "files": [
+            "config/packages/validator.yaml"
         ]
     }
 }
