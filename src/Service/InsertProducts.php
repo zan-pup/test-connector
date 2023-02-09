@@ -22,22 +22,20 @@ class InsertProducts
     {
         $sampleProducts = [
             [
-                'id' => 1,
+                'id' => '1',
                 'name' => 'Monitor',
-                'price' => 99.99
+                'price' => '99.99'
             ],
             [
-                'id' => 2,
+                'id' => '2',
                 'name' => 'Desktop PC',
-                'price' => 499.99
+                'price' => '499.99'
             ]
         ];
 
         $this->containerApi->log(ContainerApiInterface::LOG_LEVEL_NOTICE, "Starting import of sample products");
 
-        foreach ($sampleProducts as $product){
-            $this->containerApi->writeToOutputFile($product);
-        }
+        $this->containerApi->writeToOutputFile($sampleProducts);
 
         $this->containerApi->log(ContainerApiInterface::LOG_LEVEL_SUCCESS, "Successfully imported sample products");
     }

@@ -27,14 +27,16 @@ class DatasourceCommandTest extends KernelTestCase
         $containerApiMock->addExpectedLog(ContainerApiInterface::LOG_LEVEL_NOTICE, 'Starting import of sample products');
         $containerApiMock->addExpectedLog(ContainerApiInterface::LOG_LEVEL_SUCCESS, 'Successfully imported sample products');
         $containerApiMock->addExpectedProduct([
-            'id' => 1,
-            'name' => 'Monitor',
-            'price' => 99.99
-        ]);
-        $containerApiMock->addExpectedProduct([
-            'id' => 2,
-            'name' => 'Desktop PC',
-            'price' => 499.99
+            [
+                'id' => '1',
+                'name' => 'Monitor',
+                'price' => '99.99'
+            ],
+            [
+                'id' => '2',
+                'name' => 'Desktop PC',
+                'price' => '499.99'
+            ]
         ]);
 
         $commandTester = new CommandTester($container->get(DatasourceCommand::class));
