@@ -31,6 +31,7 @@ class ContainerApiFacade implements ContainerApiInterface
     {
         $body = new WriteLogInput();
         $body->setMessage($message);
+        $body->setContext([]);
 
         try{
             $this->client->writeLog($level, $body);
