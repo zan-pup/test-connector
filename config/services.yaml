@@ -20,5 +20,8 @@ services:
             - '../src/Entity/'
             - '../src/Kernel.php'
 
+    Productsup\ContainerApi\Client\Client:
+        factory: ['@App\ContainerApi\ClientFactory', 'build']
+
     # add more service definitions when explicit configuration is needed
     # please note that last definitions always *replace* previous ones

@@ -55,5 +55,5 @@ docker run --rm --interactive --tty -v $PWD:/app composer require jane-php/open-
 
 * Generate the Container API client
 ```
-docker run --rm --interactive --tty -v $PWD:/app php:8.1-cli php bin/console
+docker run --rm --interactive --tty -v $PWD:/app -w /app php:8.1-cli php bin/generate-container-api-client
 ```

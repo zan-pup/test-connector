@@ -2,7 +2,7 @@
 
 return [
     'openapi-file' => __DIR__ . '/container-api.json',
-    'namespace' => 'Productsup\ContainerApi\BaseClient',
+    'namespace' => 'Productsup\ContainerApi\Client',
     'directory' => __DIR__ . '/../../ContainerApiClient',
     'strict' => false,
     'use-fixer' => true,

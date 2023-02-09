@@ -14,6 +14,8 @@ COPY config/ ./config
 COPY src ./src
 COPY composer.json composer.lock .env ./
 
-RUN composer   install --no-dev
+COPY ContainerApiClient/ ./ContainerApiClient
+
+RUN composer install --no-dev
 
 CMD ["php", "bin/console"]

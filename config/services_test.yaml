@@ -1,0 +1,12 @@
+services:
+    _defaults:
+        autowire: true
+        autoconfigure: true
+
+    App\Tests\Mocks\:
+        resource: '../tests/Mocks/*'
+
+    App\Tests\Mocks\MockContainerApi:
+        public: true
+
+    App\ContainerApi\ContainerApiFacade: '@App\Tests\Mocks\MockContainerApi'
