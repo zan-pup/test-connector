@@ -23,7 +23,7 @@ class InsertProducts
         $sampleProducts = [
             [
                 'id' => '1',
-                'name' => 'Monitor',
+                'name' => 'Display',
                 'price' => '99.99'
             ],
             [
